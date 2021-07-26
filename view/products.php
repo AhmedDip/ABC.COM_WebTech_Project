@@ -73,21 +73,10 @@ body {
 <body>
 
 <h1 align='center'>ABC.COM</h1>
-<ul>
-  <li><a href="ManagerHome.php" selected> Home</a></li>
-  <li><a href="changePassword.php">Change Password</a></li>
-  <li><a href="ManagerProfile.php" selected>My Profile</a></li>
-  <li><a href="SearchUser.php">Search User</a></li>
-  <li><a href="AddSeller.php">Add Seller</a></li>
-  <li><a href="checkOrderDeliver.php">Check Order</a></li>
-  <li><a href="top.php">Top Products</a></li>
-  <li><a href="SearchUser.php">Search User</a></li>
-  <li><a href="products.php">Products</a></li>
-  <li><a href="categories.php">Categories</a></li>
-  
 
-  <li><a href="Logout.php">Logout</a></li>
-  <li></li>
+<header>
+<?php include 'header\header1.php';?>
+</header>
   
 </ul>
 

@@ -23,17 +23,10 @@ header("Location: Login.php"); // Redirecting To Home Page
 <h1  align='center'>ABC.COM</h1>
 
 
-<ul>
-  <li><a href="ManagerHome.php" selected> Home</a></li>
-  <li><a href="ManagerProfile.php" selected>My Profile</a></li>
-  <li><a href="AddSeller.php">Add Seller</a></li>
-  <li><a href="checkOrder.php">Check Order List </a></li>
-  <li><a href="top.php">Top Selling Product</a></li>
-  <li><a href="SearchUser.php">Search User</a></li>
-  <li><a href="Logout.php">Logout</a></li>
-  <li></li>
-  
-</ul>
+
+<header>
+<?php include 'header\header1.php';?>
+</header>
 
 
 <p id="demo"></p>

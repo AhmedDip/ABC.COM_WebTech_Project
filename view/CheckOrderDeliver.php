@@ -1,3 +1,11 @@
+<?php
+session_start(); 
+if(empty($_SESSION["userName"])) 
+{
+header("Location: Login.php"); // Redirecting To Home Page
+}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -23,22 +31,10 @@
 <h1  align='center'>ABC.COM</h1>
 
 
-<ul>
-  <li><a href="ManagerHome.php" selected> Home</a></li>
-  <li><a href="changePassword.php">Change Password</a></li>
-  <li><a href="ManagerProfile.php" selected>My Profile</a></li>
-  <li><a href="AddSeller.php">Add Seller</a></li>
-  <li><a href="checkOrder.php">Check Order</a></li>
-  <li><a href="top.php">Top Products</a></li>
-  <li><a href="SearchUser.php">Search User</a></li>
-  <li><a href="addProduct.php">Add Products</a></li>
-  <li><a href="categories.php">Categories</a></li>
 
-
-  <li><a href="Logout.php">Logout</a></li>
-  <li></li>
-  
-</ul>
+<header>
+<?php include 'header\header1.php';?>
+</header>
 
 <div class="header" align='center'><h3>Order Details</h3></div>
   <div>

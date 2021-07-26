@@ -40,15 +40,9 @@
 
 
 <h1 align='center'>ABC.COM</h1>
-<ul>
-  <li><a href="ManagerHome.php"> Home</a></li>
-  <li><a href="ManagerProfile.php">My Profile</a></li>
-  <li><a href="checkOrder.php">View Ordered Product </a></li>
-  <li><a href="Logout.php">Logout</a></li>
-  <li></li>
-  
-</ul>
- 
+<header>
+<?php include 'header\header1.php';?>
+</header>
 	<h1>Seach</h1>
 	<input type="text" placeholder="Product Id" name="pid" id="pid" onkeyup="ajax()">
 	 

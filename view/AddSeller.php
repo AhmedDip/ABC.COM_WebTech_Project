@@ -49,14 +49,9 @@ body {
 
     
 <h1 align='center'>ABC.COM</h1>
-<ul>
-  <li><a href="ManagerHome.php"> Home</a></li>
-  <li><a href="ManagerProfile.php">My Profile</a></li>
-  <li><a href="checkOrder.php">View Ordered Product </a></li>
-  <li><a href="Logout.php">Logout</a></li>
-  <li></li>
-  
-</ul>
+<header>
+<?php include 'header\header1.php';?>
+</header>
 
     
     <a href="ManagerHome.php">Go Back</a>
