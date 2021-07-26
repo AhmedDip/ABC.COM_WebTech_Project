@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
     <form method="POST" action="">
-        <label><b> Update Status: </b></label>
+        <label><h1> Update Status: </h1></label>
         <select name="status">
             <option value="accept" <?php if ($status == 'accept') {
                                         echo ' selected="selected"';
@@ -68,6 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                             echo ' selected="selected"';
                                         } ?>>Rejected</option>
         </select>
+    
         <input type="submit" value="Update" class="buy-now-button">
     </form>
 </body>

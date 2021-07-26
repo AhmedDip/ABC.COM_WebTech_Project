@@ -28,7 +28,7 @@ header("Location: Login.php"); // Redirecting To Home Page
 <div>
 
 <header>
-<?php include 'header\header.php';?>
+<?php include 'header\header1.php';?>
 </header>
 <?php 
 
