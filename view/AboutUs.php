@@ -77,15 +77,15 @@ html {
 
 <div class="about-section">
   <h1>About Us Page</h1>
-  <p>ABC.COM is an Ecommerce. </p>
-  <p>I used html,css,php,javaScript,mysql and many more to build this website.</p>
+  <p>ABC.COM is an E-commerce Platform. </p>
+  <p>This is a project where I developed a full front-end and back-end system using PHP, JavaScript and MYSQL</p>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <img src="b.png" alt="Dip" style="width:100%">
       <div class="container">
         <h2>Ahmed Rasidun Bari Dip</h2>
         <p class="title">CEO & Founder</p>
