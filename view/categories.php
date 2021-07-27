@@ -13,6 +13,12 @@ header("Location: Login.php"); // Redirecting To Home Page
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>
+  h3{
+    color:blue;}
+
+    h2{
+      color:red;
+    }
 
 
 </style>
@@ -34,7 +40,7 @@ header("Location: Login.php"); // Redirecting To Home Page
 <?php 
 
     if (isset($_SESSION['userName'])) {
-    echo "<h5> Logged in with ".$_SESSION['userName'].", Welcome to Manager's Homepage"."</h5>";
+    echo "<h3> Logged in with ".$_SESSION['userName'].", Welcome to trending products world"."</h3>";
 
     }
     else{
@@ -49,7 +55,7 @@ header("Location: Login.php"); // Redirecting To Home Page
       <div class="col-md-4">
         <div class="d-flex watch-bg justify-content-between align-items-center">
        
-          <h1>Watch</h1>
+          <h2>Watch</h2>
           <img src="image/categories/watch.png" alt="">
          
           <button type="button" onclick="loadDoc()">View</button>
@@ -57,14 +63,14 @@ header("Location: Login.php"); // Redirecting To Home Page
       </div>
       <div class="col-md-4">
         <div class="d-flex justify-content-between align-items-center bag-bg">
-          <h1>Bag</h1>
+          <h2>Bag</h2>
           <img src="image/categories/bag.png" alt="">
           <button type="button" onclick="loadDoc()">View</button>
         </div>
       </div>
       <div class="col-md-4">
         <div class="d-flex justify-content-between align-items-center shoes-bg">
-          <h1>Shoes</h1>
+          <h2>Shoes</h2>
           <img src="image/categories/shoes.png" alt="">
           <button type="button" onclick="loadDoc()">View</button>
         </div>
@@ -85,7 +91,7 @@ function loadDoc() {
     </div>
   </div>
 
-  <h1 align='center'>Trending products</h1>
+  <h2 align='center'>Trending products</h2>
 
   <div class="container" id="shoes">
     <h3>Shoes</h3>
