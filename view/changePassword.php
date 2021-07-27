@@ -13,8 +13,11 @@ include('../control/passwordValidation.php');
     <script src="../javaScript/passwordValidation.js"></script>
     <style>
 
-    p{
+    p,h4{
         color:red;
+    }
+    label{
+      color:blue;
     }
 
     input:focus {

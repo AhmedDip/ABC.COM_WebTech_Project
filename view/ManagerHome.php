@@ -16,10 +16,15 @@ header("Location: Login.php"); // Redirecting To Home Page
 
 .show {display: block;}
 body {
- background-image: url("2.jpg");
- background-color: #cccccc;
 }
 
+h3,p{
+  color:blue;
+}
+
+h4{
+  color:red;
+}
 
 </style>
 </head>
@@ -31,7 +36,11 @@ body {
 
 
 <header>
-<?php include 'header\header1.php';?>
+<?php 
+
+include ('header\header1.php');
+
+?>
 </header>
 
   
@@ -48,7 +57,7 @@ function displayDate() {
 <?php 
 
     if (isset($_SESSION['userName'])) {
-    echo "<h5> Logged in with ".$_SESSION['userName'].", Welcome to Manager's Homepage"."</h5>";
+    echo "<h3> Logged in with ".$_SESSION['userName'].", Welcome to Manager's Homepage"."</h3>";
 
     }
     else{

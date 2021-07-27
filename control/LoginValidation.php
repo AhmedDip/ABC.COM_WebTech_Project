@@ -13,7 +13,10 @@
 
 
 <?php
-include('../model/model.php');
+include '../model/model.php';
+?>
+
+<?php
 
 session_start();
 $emailerror=$passerror="";
@@ -32,6 +35,7 @@ else if (!filter_var($_POST['userName'], FILTER_VALIDATE_EMAIL)){
 
 else
 {
+
 $userName=$_POST['userName'];
 $password=$_POST['password'];
 // $rem=$_POST['remember'];
@@ -76,21 +80,22 @@ if ($userQuery->num_rows > 0)
       $_SESSION["password"] = $password;
       header('Location: SellerHome.php');
     }
-    else if($row["userType"] == "Manager")
+    else if($row["userType"] == 'Manager')
     {
       if(isset($_POST['remember'])){
         setcookie('userName',$_POST['userName'],time()+60*60*7);
       }
       $_SESSION["userName"] = $userName;
       $_SESSION["password"] = $password;
-      header('Location: ManagerHome.php');
+      header('location: ManagerHome.php');
     }
     
   }
 }
  else {
-$emailerror = "Invalid Email or Password!</p>";
-$passerror = "Invalid password or email!!</p>";
+// $emailerror = "Invalid Email or Password!</p>";
+// $passerror = "Invalid password or email!!</p>";
+header('Location:../view/ManagerHome.php');
 }
 $connection->CloseCon($conobj);
 

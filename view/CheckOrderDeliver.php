@@ -22,13 +22,16 @@ header("Location: Login.php"); // Redirecting To Home Page
 </div>
 </div>
   <style>
+    h3{
+      color:red;
+    }
     
   </style>
 </head>
 
 <body>
 
-<h1  align='center'>ABC.COM</h1>
+<h1 align='center'>ABC.COM</h1>
 
 
 

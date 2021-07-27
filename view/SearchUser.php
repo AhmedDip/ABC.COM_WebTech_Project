@@ -8,15 +8,15 @@ header("Location: ../view/Login.php"); // Redirecting To Home Page
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
+
+	
 <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<title>Live search</title>
+	<title>Search User</title>
 	<script> 
 
   function ajax()
@@ -47,6 +47,11 @@ header("Location: ../view/Login.php"); // Redirecting To Home Page
 
 
 	</script>
+	<style>
+		h2{
+			color:red;
+		}
+	</style>
 </head>
 <body>
 
@@ -56,7 +61,7 @@ header("Location: ../view/Login.php"); // Redirecting To Home Page
 <?php include 'header\header1.php';?>
 </header>
  
-	<h1>Seach</h1>
+	<h2>Seach User</h2>
 	<input type="text" email="email" id="email" onkeyup="ajax()">
 	 
 	<input type="button" class="buy-now-button" name="" value="Submit" onclick="ajax()">

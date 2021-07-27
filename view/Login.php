@@ -1,5 +1,5 @@
 <?php
-include('../control/LoginValidation.php');
+include '../control/LoginValidation.php';
 ?>
 <!DOCTYPE HTML>
 <html lang="en">
@@ -7,12 +7,11 @@ include('../control/LoginValidation.php');
     <script src="../javaScript/LoginValidation.js"></script>
 
     <style>
-      h2{
-        font-family:verdana;
-      
-      }
       span{
         color:red;
+      }
+      h2{
+        color:blue;
       }
       body {
  background-image: url("1.jpg");
@@ -32,22 +31,26 @@ input:focus {
 }
     </style>
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="style.css"> 
     </head>
     <body>
    <div class="sticky">
    <div><h1 align='center'> ABC.COM</h1></div>
    
    <header>
-<?php include 'header\header.php';?>
+   <?php 
+
+include ('header/header.php');
+
+?>
 </header>
    
   </div>
 </div>
-<center> <fieldset>
+<center> 
+  <fieldset>
     
-    <br> <br> <br>
-    <fieldset>
+    <br> 
 
     <div class="container">
             <h2>LOGIN</h2>
@@ -63,30 +66,28 @@ input:focus {
         
             <br>
           
-              <td><span id="passError">* <?php echo $passerror; ?></span></td>
+              <span id="passError">* <?php echo $passerror; ?></span>
             
 
-            <br>
-            <input type="checkbox" id="remember" name="remember" value="1">Remember Me 
             <br> <br>
+            <!-- <input type="checkbox" id="remember" name="remember" value="1">Remember Me 
+            <br> <br> -->
             <button class="buy-now-button" name="submit" value="Submit">Submit</button>
             <br> <br>
             Want to register yourself? <a href="registration.php"> Register Here </a>
             <br> <br>
+
+            </form>
             </div>
+
             <?php 
 
             include ('footer/footer.php');
 
             ?>
 
-
-            
-    
-
             <br> <br>
-            </form>
-
+          
             </fieldset>
 
 
