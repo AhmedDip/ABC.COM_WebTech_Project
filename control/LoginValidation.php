@@ -80,6 +80,7 @@ if ($userQuery->num_rows > 0)
       $_SESSION["password"] = $password;
       header('Location: SellerHome.php');
     }
+    //Manager
     else if($row["userType"] == 'Manager')
     {
       if(isset($_POST['remember'])){
@@ -93,9 +94,9 @@ if ($userQuery->num_rows > 0)
   }
 }
  else {
-// $emailerror = "Invalid Email or Password!</p>";
-// $passerror = "Invalid password or email!!</p>";
-header('Location:../view/ManagerHome.php');
+$emailerror = "Invalid Email or Password!</p>";
+$passerror = "Invalid password or email!!</p>";
+
 }
 $connection->CloseCon($conobj);
 
