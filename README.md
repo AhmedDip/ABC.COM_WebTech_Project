@@ -1,7 +1,7 @@
 # ABC.COM_WebTech_Project
 This is an e-commerce website. This is a project where I developed a full front-end and back-end system  using  PHP, JavaScript and MYSQL
 
-##Few Screenshot of my project
+## Few Screenshot of my project
 
 ![Screenshot (479)](https://user-images.githubusercontent.com/67531074/127242645-1af9b5c0-d23e-43e4-b3b3-68a77c1fb9ad.png)
 ![Screenshot (480)](https://user-images.githubusercontent.com/67531074/127242648-9a61a7c4-77c7-422b-b7d2-cde46fb34b00.png)
