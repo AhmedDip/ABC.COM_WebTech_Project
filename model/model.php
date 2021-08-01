@@ -62,10 +62,6 @@ function OpenCon()
    }
  }
 
-
-
- 
-
  function deleteManager($con,$userName)
  {
     $sql="DELETE from users WHERE email ='$userName'";
@@ -91,9 +87,6 @@ function OpenCon()
    }
    return $result;
  }
-
-
-
 
 
  function updateUsers($con,$table,$fname,$lname,$phone,$gender,$homeAddress,$email,$birth,$type)
@@ -170,8 +163,6 @@ function OpenCon()
       return FALSE;
    }
  }
-
-
 
 
 function CloseCon($conn)
